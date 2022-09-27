@@ -3,39 +3,39 @@
 
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
-    background-color: #160040;
-    color: white;
+  background-color: #160040;
+  color: white;
 }
 
 div{
-    display: inline-block;
+  display: inline-block;
 }
 
 .title{
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    color: transparent;
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: white;
-    font-size: 100px;
-    position: relative;
-    z-index: 1;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: white;
+  font-size: 100px;
+  position: relative;
+  z-index: 1;
 }
 
 .title::after{
-    content: "";
-    position: absolute;
-    background-color: #8E05C2;
-    z-index: -1;
-    top: 60%;
-    left: -0.1em;
-    right: -0.1em;
-    bottom: 0;
+  content: "";
+  position: absolute;
+  background-color: #8E05C2;
+  z-index: -1;
+  top: 60%;
+  left: -0.1em;
+  right: -0.1em;
+  bottom: 0;
 }
 

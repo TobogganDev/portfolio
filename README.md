@@ -5,6 +5,7 @@
 ## Majeure (65% de la note) :
 
 * Usage de technologies de balisage et de feuille de style
+
 * Est autorisé :
 
     * L'usage de framework CSS (tailwind, boostrap, ...)
