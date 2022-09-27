@@ -16,6 +16,8 @@
 
 * Mis en ligne
 
+* Responsive
+
 ## Mineure à choisir (35% de la note)
 
 * Eco-conception et accessibilité (RGAA/WCAG)
