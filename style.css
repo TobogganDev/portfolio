@@ -11,7 +11,7 @@
 
 html{
   scroll-behavior: smooth;
-
+  
 }
 
 body{
@@ -83,10 +83,34 @@ body{
 }
 
 .containTitle p{
-  text-align: end;
+  /* text-align: end; */
   font-family: 'Noto Sans Mono', monospace;
-
+  border-right: solid 3px #8E05C2;
+  white-space: nowrap;
+  overflow: hidden;    
+  margin-left: auto;
 }
+
+/* Animation */
+.containTitle p {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+  animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 405px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: #8E05C2;}
+  to{border-right-color: transparent;}
+}
+
 
 .dropdown{
   margin-top: 30%;
