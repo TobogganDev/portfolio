@@ -235,7 +235,7 @@ header{
   from{
     transform: rotate(0deg);
   }
-
+  
   to{
     transform: rotate(360deg);
   }
@@ -311,4 +311,31 @@ header{
 
 .projects{
   width: 100%;
+  
+  .contain-all-projects{
+    width: 80%;
+    margin: 100px auto;
+
+    .contain-title h2{
+      // margin-left: 15px;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 1;
+      font-size: 50px;
+    }
+    .contain-title h2::after{
+      content: "";
+      position: absolute;
+      background-color: #8E05C2;
+      z-index: -1;
+      top: 60%;
+      left: -0.1em;
+      right: -0.1em;
+      bottom: 0;
+    }
+    .contain-cards{
+      
+    }
+  } 
+
 }
