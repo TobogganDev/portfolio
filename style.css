@@ -11,7 +11,6 @@
 
 html{
   scroll-behavior: smooth;
-  
 }
 
 body{
@@ -190,3 +189,89 @@ header{
   color: #7b2cbf;
   font-size: 100px;
 }
+
+.music-container{
+  background-color: #570A57;
+  border-radius: 15px;
+  box-shadow: 0 20px 20px 0 #7b2cbf;
+  display: flex;
+  padding: 20px 30px;
+  position: relative;
+  margin: 100px 50px 100px auto;
+  margin-left: auto;
+  width: fit-content;
+  z-index: 10;
+}
+
+.img-container{
+  position: relative;
+  width: 110px;
+}
+
+.img-container img{
+  width: inherit;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: rotate 3s linear infinite;
+  animation-play-state: paused;
+}
+
+.music-container.play .img-container img{
+  animation-play-state: running;
+}
+
+@keyframes rotate {
+  from{
+    transform: rotate(0deg);
+  }
+
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.navigation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.action-btn{
+  background-color: #570A57;
+  border: 0;
+  color: #dfdbdf;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 20px;
+  padding: 10px;
+}
+
+.action-btn-big{
+  color: #cdc2d0;
+  font-size: 30px;
+}
+
+.action-btn:focus{
+  outline: 0;
+}
+
+.music-info{
+  background-color: #8E05C2;
+  /* opacity: 0; */
+  border-radius: 15px 15px 0 0;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: calc(100% - 40px);
+  transform: translateY(0%);
+}
+
+.music-container.play .music-info{
+  opacity: 1;
+}
+
