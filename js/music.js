@@ -5,15 +5,15 @@ const nextBtn = document.querySelector('#next');
 const audio = document.querySelector('#audio');
 const progress = document.querySelector('.progress');
 const progressContainer = document.querySelector('.progress-container');
-const title = document.querySelector('#title');
+const title = document.querySelector('#music-title');
 const cover = document.querySelector('#cover');
 
 
 // Song titles
-const songs = ['one-republic', 'mcklemore', 'memories'];
+const songs = ['mcklemore', 'memories', 'one-republic'];
 
 // Keep track of songs
-const songIndex = 2;
+const songIndex = 1;
 
 // Initially load song
 loadSong(songs(songIndex));
