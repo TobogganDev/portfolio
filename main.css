@@ -192,6 +192,7 @@ header{
   grid-column: 2/5;
   font-weight: 600;
   padding-right: 20px;
+  font-size: smaller;
 }
 .pres .img {
   grid-column: 5;
@@ -313,19 +314,21 @@ header{
 } */
 /* ************************************************ */
 .projects {
-  width: 100%;
-}
-.projects .contain-all-projects {
   width: 80%;
   margin: 100px auto;
 }
-.projects .contain-all-projects .contain-title h2 {
+.projects .contain-title {
+  display: inline-block;
+  width: fit-content;
+  grid-row: 1;
+}
+.projects .contain-title h2 {
   text-transform: uppercase;
   position: relative;
   z-index: 1;
-  font-size: 50px;
+  font-size: 70px;
 }
-.projects .contain-all-projects .contain-title h2::after {
+.projects .contain-title h2::after {
   content: "";
   position: absolute;
   background-color: #8E05C2;

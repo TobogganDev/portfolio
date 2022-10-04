@@ -193,6 +193,7 @@ header{
     grid-column: 2 / 5;
     font-weight: 600;
     padding-right: 20px;
+    font-size: smaller;
   }
   .img{
     grid-column: 5;
@@ -326,20 +327,21 @@ header{
 /* ************************************************ */
 
 .projects{
-  width: 100%;
+  width: 80%;
+  margin: 100px auto;
   
-  .contain-all-projects{
-    width: 80%;
-    margin: 100px auto;
+  .contain-title{
+    display: inline-block;
+    width: fit-content;
+    grid-row: 1;
 
-    .contain-title h2{
-      // margin-left: 15px;
+    h2{
       text-transform: uppercase;
       position: relative;
       z-index: 1;
-      font-size: 50px;
+      font-size: 70px;
     }
-    .contain-title h2::after{
+    h2::after{
       content: "";
       position: absolute;
       background-color: #8E05C2;
@@ -349,9 +351,7 @@ header{
       right: -0.1em;
       bottom: 0;
     }
-    .contain-cards{
-      
-    }
-  } 
+    
+  }
+} 
 
-}
