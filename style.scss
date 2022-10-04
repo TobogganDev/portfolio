@@ -152,21 +152,18 @@ header{
   border-color: #8E05C2;
 } */
 
-/* .pres{
-  width: 100%;
-  height: 100vh;
-} */
-
-.contain-description{
-  display: flex;
+.pres{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4,15vh);
   width: 80%;
   margin: 100px auto;
-}
 
-.contain-info{
-  display: flex;
-  flex-direction: column;
-}
+  i{
+    color: #7b2cbf;
+    font-size: 100px;
+  }
+} 
 
 .contain-title{
   display: inline-block;
@@ -192,10 +189,7 @@ header{
   bottom: 0;
 }
 
-.contain-description i{
-  color: #7b2cbf;
-  font-size: 100px;
-}
+
 
 /* .music-container{
   background-color: #570A57;
