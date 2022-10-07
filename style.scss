@@ -82,7 +82,6 @@ body{
 }
 
 .containTitle p{
-  /* text-align: end; */
   font-family: 'Noto Sans Mono', monospace;
   border-right: solid 3px #8E05C2;
   white-space: nowrap;
@@ -163,7 +162,8 @@ header{
     color: #7b2cbf;
     font-size: 100px;
     grid-row: 2;
-    // text-align: center;
+    text-align: end;
+    padding-right: 15px;
   }
   .contain-title{
     display: inline-block;
@@ -195,6 +195,18 @@ header{
     padding-right: 20px;
     font-size: smaller;
   }
+  .skills{
+    grid-row: 4;
+    display: flex;
+    grid-column: 2/span 3;
+    align-items: self-end;
+
+    ul{
+      display: flex;
+      list-style: none;
+    }
+    
+  }
   .img{
     grid-column: 5;
     grid-row: 2/5;
@@ -205,14 +217,7 @@ header{
       height: 100%;
     }
   }
-} 
-
-
-
-
-
-
-
+}
 
 /* .music-container{
   background-color: #570A57;

@@ -78,7 +78,6 @@ body {
 }
 
 .containTitle p {
-  /* text-align: end; */
   font-family: "Noto Sans Mono", monospace;
   border-right: solid 3px #8E05C2;
   white-space: nowrap;
@@ -165,6 +164,8 @@ header{
   color: #7b2cbf;
   font-size: 100px;
   grid-row: 2;
+  text-align: end;
+  padding-right: 15px;
 }
 .pres .contain-title {
   display: inline-block;
@@ -193,6 +194,16 @@ header{
   font-weight: 600;
   padding-right: 20px;
   font-size: smaller;
+}
+.pres .skills {
+  grid-row: 4;
+  display: flex;
+  grid-column: 2/span 3;
+  align-items: self-end;
+}
+.pres .skills ul {
+  display: flex;
+  list-style: none;
 }
 .pres .img {
   grid-column: 5;
