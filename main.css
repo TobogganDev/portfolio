@@ -32,6 +32,66 @@ body {
   border-radius: 10px !important;
 }
 
+.menu {
+  width: 100%;
+  height: 100vh;
+}
+.menu .cross {
+  width: 40px;
+  height: 6px;
+  color: white;
+  position: absolute;
+  background-color: #fff;
+  transform: rotate(45deg);
+  top: 45px;
+  right: 45px;
+  cursor: pointer;
+}
+.menu .cross::before {
+  content: "";
+  width: 40px;
+  height: 6px;
+  color: white;
+  position: absolute;
+  background-color: #fff;
+  transform: rotate(90deg);
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.menu ul li {
+  margin: 20px 0;
+}
+.menu ul .links {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 100px;
+  z-index: 1;
+  position: relative;
+}
+.menu ul .links::after {
+  visibility: hidden;
+  content: "";
+  position: absolute;
+  background-color: #8E05C2;
+  z-index: -1;
+  top: 60%;
+  left: -0.1em;
+  right: -0.1em;
+  bottom: 0;
+}
+.menu ul .links::after:hover {
+  visibility: visible;
+}
+
 .homeBody {
   width: 100%;
   height: 100vh;
