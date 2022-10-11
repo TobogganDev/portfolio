@@ -119,20 +119,22 @@ body {
   z-index: 1;
   position: relative;
 }
-.menu ul .links::after {
-  width: 0;
+.menu ul .links::before {
   content: "";
   position: absolute;
-  background-color: #211724;
   z-index: -1;
-  top: 60%;
-  left: -0.1em;
-  right: -0.1em;
+  top: 0;
   bottom: 0;
-  transition: 0.4s ease-in;
+  left: -0.25em;
+  right: -0.25em;
+  background-color: var(--background);
+  transform-origin: center right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
 }
-.menu ul .links:hover::after {
-  width: 100%;
+.menu ul .links:hover::before {
+  transform: scaleX(1);
+  transform-origin: center left;
 }
 
 .homeBody {
@@ -143,6 +145,8 @@ body {
   justify-content: center;
   animation: start 2s;
   flex-direction: column;
+  background-image: url(img/menu-bg.jpg);
+  background-size: cover;
 }
 
 @keyframes start {

@@ -4,7 +4,7 @@ let span2 = document.getElementById("span2")
 let span3 = document.getElementById("span3")
 let span4 = document.getElementById("span4")
 let cross = document.getElementById("cross")
-let links = document.getElementById("links")
+let links = document.getElementById("links-contain")
 
 click.addEventListener('click', function(){
   span1.style.width = "100%"
