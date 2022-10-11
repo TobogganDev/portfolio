@@ -1,13 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>TobogganDev</title>
+  <meta charset="UTF-8">
+  <link rel="icon" href="img/slide.svg">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://kit.fontawesome.com/23761b7654.js" crossorigin="anonymous"></script> <!-- FontAwesome Icons -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script> <!-- GSAP Animations -->
+  <title>TobogganDev Portfolio</title>
 </head>
+
 <body>
+  <!-- <header>
+    <nav>
+      <ul class="contain-links">
+        <li><a href="" class="nav-links">About me</a></li>
+        <li><a href="" class="nav-links">Projects</a></li>
+        <li><a href="" class="nav-links">Contact</a></li>
+      </ul>
+    </nav>
+  </header> -->
+  <div class="menu">
+    <div id="span1" class="span1 div-span"></div>
+    <div id="span2" class="span2 div-span"></div>
+    <div id="span3" class="span3 div-span"></div>
+    <div id="span4" class="span4 div-span"></div>
     
+    <div id="cross" class="cross"></div>
+    <ul id="links-contain">
+      <li><a href="about.html" class="links">About me</a></li>
+      <li><a href="projects.html" class="links">Projects</a></li>
+      <li><a href="contact.html" class="links">Contact</a></li>
+    </ul>
+  </div>
+  
+  <div class="homeBody">
+    <div class="containTitle">
+      <h1 class="title">TobogganDev</h1>
+      <p>Front End Developer / UI Designer</p>
+    </div>
+    <button id="click">Open menu</button>
+  </div>
+  
+  
+  
+  <!-- <div class="music-container play">
+    <div class="music-info">
+      <h4 id="music-title">I ain't worried</h4>
+      <div class="progress-container">
+        <div class="progress"></div>
+      </div>
+    </div>
+    
+    <audio src="music/one-republic.m4a" id="audio"></audio>
+    
+    <div class="img-container">
+      <img src="img/one-republic.jpg" alt="music-cover" id="cover">
+    </div>
+    
+    <div class="navigation">
+      <button id="prev" class="action-btn">
+        <i class="fas fa-backward"></i>
+      </button>
+      <button id="play" class="action-btn action-btn-big">
+        <i class="fas fa-play"></i>
+      </button>
+      <button id="next" class="action-btn">
+        <i class="fas fa-forward"></i>
+      </button>
+    </div>
+  </div> -->
+  <script src="js/music.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
