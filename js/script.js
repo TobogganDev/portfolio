@@ -25,3 +25,17 @@ cross.addEventListener('click', function(){
   links.style.visibility = "hidden"
   links.style.transitionDelay = "0s"
 })
+
+// *****************************
+
+let bgImage = document.getElementById('background')
+let sensitivity = 100
+
+bgImage.addEventListener('mousemove', addCoors)
+
+function addCoors(e){
+  const x = e.clientX
+  const y = e.clientY
+
+  bgImage.style.backgroundPosition = ` ${x / sensitivity}px ${y / sensitivity}px`
+}
