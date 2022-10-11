@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200&display=swap');
 
 
+:root{
+  --background: #181818;
+  --first-purple: #8E05C2;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -43,32 +48,39 @@ body{
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(4,25vh);
   position: absolute;
-  
 
   .div-span{
     z-index: 20;
-    background-color: #181818;
+    background-color: #8E05C2;
   }
   .span1{
     grid-row: 1;
     grid-column: 1/4;
+    width: 0%;
+    transition: 0.5s;
   }
 
   .span2{
     grid-row: 2;
+    width: 0%;
     grid-column: 1/4;
+    transition: 1s;
 
   }
 
   .span3{
     grid-row: 3;
     grid-column: 1/4;
+    width: 0%;
+    transition: 1.5s;
 
   }
 
   .span4{
     grid-row: 4;
     grid-column: 1/4;
+    width: 0%;
+    transition: 2s;
 
   }
   
@@ -83,6 +95,7 @@ body{
     right: 45px;
     cursor: pointer;
     z-index: 500;
+    visibility: hidden;
   }
   
   .cross::before{
@@ -105,6 +118,8 @@ body{
     grid-column: 2/3;
     grid-row: 1/5;
     z-index: 200;
+    visibility: hidden;
+    transition-delay: 2s;
     
     li{
       margin: 20px 0;
@@ -124,7 +139,7 @@ body{
       width: 0;
       content: "";
       position: absolute;
-      background-color: #8E05C2;
+      background-color: #211724;
       z-index: -1;
       top: 60%;
       left: -0.1em;
@@ -222,7 +237,7 @@ body{
 }
 
 
-.dropdown{
+#click{
   margin-top: 30%;
   font-size: 60px;
   color: white;
