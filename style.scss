@@ -194,19 +194,12 @@ body{
   justify-content: center;
   animation: start 2s;
   flex-direction: column;
-  overflow: hidden;
+  // overflow: hidden;
   position: relative;
-  .move-bg{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-image: url(img/menu-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 130%;
-    height: 130%;
-  }
+  background-image: url(img/menu-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
 }
 
 @keyframes start{
