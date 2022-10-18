@@ -12,6 +12,7 @@ click.addEventListener('click', function(){
   span3.style.width = "100%"
   span4.style.width = "100%"
   cross.style.visibility = "visible"
+  cross.style.transitionDelay = "1.2s"
   links.style.visibility = "visible"
   links.style.transitionDelay = "1.2s"
 })
@@ -22,20 +23,8 @@ cross.addEventListener('click', function(){
   span3.style.width = "0%"
   span4.style.width = "0%"
   cross.style.visibility = "hidden"
+  cross.style.transitionDelay = "1.2s"
   links.style.visibility = "hidden"
   links.style.transitionDelay = "0s"
 })
 
-// *****************************
-
-let bgImage = document.getElementById('background')
-let sensitivity = 100
-
-bgImage.addEventListener('mousemove', addCoors)
-
-function addCoors(e){
-  const x = e.clientX
-  const y = e.clientY
-
-  bgImage.style.backgroundPosition = ` ${x / sensitivity}px ${y / sensitivity}px`
-}
