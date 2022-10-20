@@ -221,7 +221,7 @@ header{
     list-style: none;
 
     .header-links{
-      
+      margin-right: 20px;
     }
   }
 }
@@ -458,7 +458,7 @@ header{
       &::after{
         content: "";
         position: absolute;
-        background-color: #8E05C2;
+        background-color: #7b2cbf;
         z-index: -1;
         top: 60%;
         left: -0.1em;
@@ -474,12 +474,11 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
 
     img{
       max-height: 80%;
       border: 3px solid #7b2cbf;
+      // background-color: #8E05C2;
     }
   }
 }
