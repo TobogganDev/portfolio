@@ -435,7 +435,6 @@ header{
 
 .container-top-about{
   width: 80%;
-  height: 100vh;
   margin: 10vh auto;
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -479,6 +478,37 @@ header{
       max-height: 80%;
       border: 3px solid #7b2cbf;
       // background-color: #8E05C2;
+    }
+  }
+
+  a{
+    color: #fff;
+    animation: bounce 2s infinite ease;
+    grid-column: 2/4;
+    margin: auto;
+  }
+}
+
+.container-pres-about{
+  margin-top: 100px;
+  width: 80%;
+  margin: auto;
+
+  .container-pres-text{
+    // padding-top: 40px;
+
+    .info{
+      display: flex;
+      gap: 7%;
+      align-items:center;
+      p{
+        
+      }
+
+      .h3{
+        font-size: 150px;
+        text-transform: uppercase;
+      }
     }
   }
 }
