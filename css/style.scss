@@ -433,6 +433,22 @@ header{
 
 // About page
 
+.socials{
+  position: fixed;
+  right: 0%;
+  top: 40%;
+  padding: 15px;
+  border-radius: 10px 0 0 10px;
+  background: #000;
+  ul{
+    list-style: none;
+    li a{
+      color: white;
+      
+    }
+  }
+}
+
 .container-top-about{
   width: 80%;
   margin: 10vh auto;
@@ -490,25 +506,106 @@ header{
 }
 
 .container-pres-about{
-  margin-top: 100px;
   width: 80%;
-  margin: auto;
+  margin: 100px auto;
 
   .container-pres-text{
     // padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    h2{
+      text-transform: uppercase;
+      position: relative;
+      z-index: 1;
 
+      &::after{
+        content: "";
+        position: absolute;
+        background-color: #7b2cbf;
+        z-index: -1;
+        top: 60%;
+        left: -0.1em;
+        right: -0.1em;
+        bottom: 0;
+      }
+    }
     .info{
       display: flex;
       gap: 7%;
       align-items:center;
       p{
+        a {
+          text-decoration: none;
+          color: white;
+          position: relative;
+          z-index: 1;
+        }
         
+        a::before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          bottom: 0;
+          left: -0.15em;
+          right: -0.15em;
+          background-color: #7b2cbf;
+          transform-origin: bottom center;
+          transform: scaleY(0.1);
+          transition: all 0.1s ease-in-out;
+        }
+        
+        a:hover::before {
+          transform: scaleY(1);
+          background-color: #7b2cbf;
+        }
       }
 
       .h3{
         font-size: 150px;
         text-transform: uppercase;
+        font-weight: 700;
+        text-decoration:underline;
+        text-decoration-color: #7b2cbf;
       }
     }
   }
+}
+
+.container-skills-about{
+  width: 80%;
+  margin: 200px auto;
+  border: 5px solid #7b2cbf;
+  padding: 25px;
+
+  .container-skills-text{
+    p{
+      span{
+        text-decoration: underline;
+        text-decoration-color:#7b2cbf ;
+      }
+    }
+    
+
+    .skills{
+      display: flex;
+      list-style: none;
+      margin-top: 25px;
+      justify-content: center;
+  
+      li i{
+        font-size: 70px;
+        padding: 0 25px;
+        // color: #7b2cbf;
+      }
+    }
+  }
+  
+}
+
+.credits{
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 10px;
 }
