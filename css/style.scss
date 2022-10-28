@@ -1,3 +1,5 @@
+@use "mixins" as *;
+
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200&display=swap');
@@ -608,4 +610,72 @@ header{
   font-size: 20px;
   text-align: center;
   padding-bottom: 10px;
+}
+
+// **********************************************
+
+.container-projects{
+  @include width;
+
+  .contain-title-projects{
+    display: inline-block;
+
+    h1{
+      text-transform: uppercase;
+      position: relative;
+      z-index: 1;
+      &::after{
+        content: "";
+        position: absolute;
+        background-color: #7b2cbf;
+        z-index: -1;
+        top: 60%;
+        left: -0.1em;
+        right: -0.1em;
+        bottom: 0;
+      }
+    }
+  }
+
+  .container-projects-cards{
+    .project-card{
+      width: 33%;
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 50px 0 100px 0;
+      background-color: #1d1d1d;
+      box-shadow: 5px 5px 16px black;
+
+      img{
+        width: 100%;
+      }
+
+      .card-info{
+        padding: 20px;
+
+        .link-card{
+          margin-top: 10px;
+          display: flex;
+          justify-content: space-between;
+
+          a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+          }
+  
+          .link-project{
+            background-color: #7b2cbf;
+          }
+
+          .link-github{
+            background-color: #fff;
+          }
+        }
+        
+      }
+    }
+  }
+  
 }
