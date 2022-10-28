@@ -1,26 +1,15 @@
-# portfolio
+# Portfolio TobogganDev
 
-# Deadline : 6 Novembre
+You can see it here : https://portfolio-toboggan.vercel.app/
 
-## Majeure (65% de la note) :
+Or you can download it by clicking on "Code", then "Download Zip" and you just have to double-click on the index.html, you'll have everything you need. !
 
-* Usage de technologies de balisage et de feuille de style
+Enjoy ;)
 
-* Est autorisé :
+## Deployement 
 
-    * L'usage de framework CSS (tailwind, boostrap, ...)
-    * L'usage de librairies
+The website is deployed with <a href="https://vercel.com/dashboard">Vercel</a> and I added on it the Chekly app to monitor the deployement and check if there's no error.
 
-* Code documenté et mis en forme selon les bonnes pratiques HTML et CSS (w3c)
+## Actions
 
-* Versionné via git, poussée sur github (repo publique)
-
-* Mis en ligne
-
-* Responsive
-
-## Mineure à choisir (35% de la note)
-
-* Eco-conception et accessibilité (RGAA/WCAG)
-
-* SEO et Rich Snippet
+* Imgbot to optimize imgs on my project
