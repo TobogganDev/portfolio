@@ -136,6 +136,7 @@ body{
       color: white;
       text-transform: uppercase;
       font-size: 100px;
+      font-weight: 200;
       z-index: 1;
       position: relative;
       
@@ -661,7 +662,7 @@ header{
       background-color: #1d1d1d;
       transition: .4s ease;
       &:hover{
-        box-shadow: 5px 5px 16px black;
+        box-shadow: 0px 2px 15px 5px #000000;
       }
       
       img{
@@ -705,4 +706,40 @@ header{
     }
   }
   
+}
+
+// **************************************
+
+.container-networks{
+  width: 80%;
+  margin: 100px auto;
+  .contain-title-socials{
+    display: inline-block;
+    h2{
+      text-transform: uppercase;
+      position: relative;
+      z-index: 1;
+      &::after{
+        content: "";
+        position: absolute;
+        background-color: #7b2cbf;
+        z-index: -1;
+        top: 60%;
+        left: -0.1em;
+        right: -0.1em;
+        bottom: 0;
+      }
+    }
+  }
+  .contain-icons-links ul{
+    display: flex;
+    align-items: center;
+    margin: 25px 7%;
+    list-style: none;
+    li .icon {
+      margin-right: 25px;
+      font-size: 70px;
+      color: white;
+    }
+  }
 }
