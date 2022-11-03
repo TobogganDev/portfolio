@@ -2,7 +2,7 @@ var div1 = document.getElementById("span1")
 var div2 = document.getElementById("span2")
 var div3 = document.getElementById("span3")
 var div4 = document.getElementById("span4")
-var cross1 = document.getElementById("cross")
+var cross1 = document.getElementById("cross1")
 var links1 = document.getElementById("links-contain")
 var burger = document.getElementById('burger')
 

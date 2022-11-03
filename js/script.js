@@ -18,6 +18,7 @@ click.addEventListener('click', function(){
 })
 
 cross.addEventListener('click', function(){
+  
   span1.style.width = "0%"
   span2.style.width = "0%"
   span3.style.width = "0%"
