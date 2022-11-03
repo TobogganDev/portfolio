@@ -12,6 +12,19 @@
 </head>
 
 <body>
+  <div class="menu">
+    <div id="span1" class="span1 div-span"></div>
+    <div id="span2" class="span2 div-span"></div>
+    <div id="span3" class="span3 div-span"></div>
+    <div id="span4" class="span4 div-span"></div>
+    <div id="cross" class="cross"></div>
+    <div id="cross1" class="cross"></div>
+    <ul id="links-contain">
+      <li><a href="about.html" class="links">About me</a></li>
+      <li><a href="projects.html" class="links">Projects</a></li>
+      <li><a href="contact.html" class="links">Contact</a></li>
+    </ul>
+  </div>
   <header>
     <div class="header-title">
       <a href="index.html">
@@ -19,6 +32,8 @@
         portfolio
       </a>
     </div>
+    <div class="burger-other" id="burger"></div>
+
     <nav>
       <ul>
         <li><a href="about.html" class="header-links">about</a></li>
@@ -38,7 +53,7 @@
   
   <section class="container-top-about">
     <div class="container-text">
-      <h1>Thomas Doret-Gaïsset</h1>
+      <h1>Thomas <br> Doret-Gaïsset</h1>
       <p>Aka TobogganDev</p>
     </div>
     <div class="container-img">
@@ -82,15 +97,20 @@
         <br>
         I also use the Adobe suite like <span>Photoshop, XD, After Effects</span>, ... 
       </p>
-      <ul class="skills">
-        <li><i class="fa-brands fa-html5"></i></li>
-        <li><i class="fa-brands fa-sass"></i></li>
-        <li><i class="fa-brands fa-js"></i></li>
-        <li><i class="fa-brands fa-wordpress"></i></li>
-        <li><i class="fa-brands fa-python"></i></li>
-        <li><i class="fa-brands fa-php"></i></li>
-        <li><i class="fa-brands fa-figma"></i></li>
-      </ul>
+      <div class="container-skills-icons">
+        <ul class="skills1">
+          <li><i class="fa-brands fa-html5"></i></li>
+          <li><i class="fa-brands fa-sass"></i></li>
+          <li><i class="fa-brands fa-js"></i></li>
+          <li><i class="fa-brands fa-wordpress"></i></li>
+        </ul>
+        <ul class="skills2">
+          <li><i class="fa-brands fa-python"></i></li>
+          <li><i class="fa-brands fa-php"></i></li>
+          <li><i class="fa-brands fa-figma"></i></li>
+        </ul>
+      </div>
+      
       
     </div>
   </section>
@@ -99,8 +119,6 @@
     <i class="fa-regular fa-copyright"></i>
     Thomas Doret-Gaïsset
   </p>
-
-  <script src="js/music.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/mobile.js"></script>
 </body>
 </html>

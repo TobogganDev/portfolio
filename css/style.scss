@@ -25,9 +25,7 @@ body{
   background-color: #181818;
   color: white;
   font-family: 'Red Hat Display', sans-serif;
-
   font-size: 20px;
-  
 }
 
 
@@ -77,10 +75,40 @@ body{
   }
 }
 
+.burger-other{
+  width: 40px;
+  height: 6px;
+  background-color: #fff;
+  z-index: 500;
+  display: none;
+  position: absolute;
+  right: 16px;
+  top: 40px;
+  @media screen and (max-width:900px) {
+    display: block;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 6px;
+    background-color: #fff;
+    top: 10px;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 6px;
+    background-color: #fff;
+    top: 20px;
+  }
+}
+
 .menu{
   width: 100%;
-  // height: 100vh;
-  // transition: 1s;
+  height: 100vh;
+  transition: 1s;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(4,25vh);
@@ -208,6 +236,7 @@ header{
   align-items: center;
   justify-content: space-between;
   padding: 20px 40px;
+  
 
   a{
     text-decoration: none;
@@ -225,14 +254,21 @@ header{
     -webkit-text-stroke-color: white;
     font-family: 'Roboto', sans-serif;
     transition: 0.4s ease-in-out;
-
+    @media screen and (max-width : 500px) {
+      font-size: 40px;
+    }
+    @media screen and (max-width : 400px) {
+      font-size: 30px;
+    }
     img{
       margin-right: 15px;
       height: 50px;
+      @media screen and (max-width : 400px) {
+        height: 35px;
+      }
     }
 
     &:hover{
-    // -webkit-text-stroke-color: #7b2cbf;
       color: #7b2cbf;
     }
   }
@@ -240,7 +276,9 @@ header{
   nav ul{
     display: flex;
     list-style: none;
-
+    @media screen and (max-width : 900px) {
+      display: none;
+    }
     .header-links{
       margin-right: 20px;
       font-size: 1.5rem;
@@ -475,75 +513,6 @@ header{
   }
 }
 
-.pres{
-  display: grid;
-  // grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4,15vh);
-  width: 80%;
-  margin: 100px auto;
-  
-  i{
-    color: #7b2cbf;
-    font-size: 100px;
-    grid-row: 2;
-    text-align: end;
-    padding-right: 15px;
-  }
-  .contain-title{
-    display: inline-block;
-    width: fit-content;
-    grid-row: 1;
-    
-    h2{
-      text-transform: uppercase;
-      position: relative;
-      z-index: 1;
-      font-size: 70px;
-    }
-    h2::after{
-      content: "";
-      position: absolute;
-      background-color: #7b2cbf;
-      z-index: -1;
-      top: 60%;
-      left: -0.1em;
-      right: -0.1em;
-      bottom: 0;
-    }
-    
-  }
-  p{
-    grid-row: 2 / 5;
-    grid-column: 2 / 5;
-    font-weight: 600;
-    padding-right: 20px;
-    font-size: smaller;
-  }
-  .skills{
-    grid-row: 4;
-    display: flex;
-    grid-column: 2/span 3;
-    align-items: self-end;
-    
-    ul{
-      display: flex;
-      list-style: none;
-    }
-    
-  }
-  .img{
-    grid-column: 5;
-    grid-row: 2/5;
-    width: 100%;
-    height: 100%;
-    
-    img{
-      height: 100%;
-    }
-  }
-}
-
-
 /* ************************************************ */
 
 .projects{
@@ -593,6 +562,9 @@ header{
       
     }
   }
+  @media screen and (max-width : 900px) {
+    display: none;
+  }
 }
 
 .container-top-about{
@@ -602,6 +574,7 @@ header{
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: repeat(3,20vh);
   
+  
   .container-text{
     grid-column: 1/3;
     grid-row: 1/4;
@@ -610,12 +583,20 @@ header{
     align-items: flex-end;
     flex-direction: column;
     text-transform: uppercase;
-
+    @media screen and (max-width : 900px) {
+      grid-column: 1/5;
+      align-items: center;
+    }
     h1{
       position: relative;
       z-index: 1;
       font-size: 3.5rem;
-
+      br{
+        display: none;
+        @media screen and (max-width : 900px) {
+          display: block;
+        }
+      }
       &::after{
         content: "";
         position: absolute;
@@ -635,7 +616,9 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    @media screen and (max-width:900px) {
+      display: none;
+    }
     img{
       max-height: 80%;
       border: 3px solid #7b2cbf;
@@ -648,6 +631,9 @@ header{
     animation: bounce 2s infinite ease;
     grid-column: 2/4;
     margin: auto;
+    @media screen and (max-width : 900px) {
+      font-size: 30px;
+    }
   }
 }
 
@@ -656,7 +642,6 @@ header{
   margin: 150px auto;
 
   .container-pres-text{
-    // padding-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -678,18 +663,21 @@ header{
     }
     .info{
       display: flex;
+      margin-top: 20px;
       gap: 7%;
-      align-items:center;
+      align-items: center;
       p{
         font-weight: 200;
+        font-size: 35px;
+        @media screen and (max-width : 900px) {
+          font-size: 25px;
+        }
         a {
           text-decoration: underline #7b2cbf;
           color: white;
           position: relative;
           z-index: 1;
         }
-        
-        
       }
 
       .h3{
@@ -698,6 +686,12 @@ header{
         font-weight: 700;
         text-decoration:underline;
         text-decoration-color: #7b2cbf;
+        @media screen and (max-width : 900px) {
+          font-size: 80px;
+        }
+        @media screen and (max-width : 600px) {
+          display: none;
+        }
       }
     }
   }
@@ -711,25 +705,39 @@ header{
 
   .container-skills-text{
     p{
+      font-size: 35px;
+      @media screen and (max-width : 900px) {
+        font-size: 25px;
+      }
       span{
         text-decoration: underline;
         text-decoration-color:#7b2cbf ;
       }
     }
     
-
-    .skills{
+    .container-skills-icons{
       display: flex;
-      list-style: none;
-      margin-top: 25px;
       justify-content: center;
+      @media screen and (max-width : 950px) {
+        flex-direction: column;
+      }
+      .skills1,.skills2{
+        display: flex;
+        list-style: none;
+        margin-top: 25px;
+        justify-content: center;
+        
+        li i{
+          font-size: 70px;
+          padding: 0 25px;
+          @media screen and (max-width : 900px) {
+            font-size: 40px;
+          }
+        }
   
-      li i{
-        font-size: 70px;
-        padding: 0 25px;
-        // color: #7b2cbf;
       }
     }
+    
   }
   
 }
