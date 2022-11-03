@@ -23,7 +23,7 @@ cross.addEventListener('click', function(){
   span3.style.width = "0%"
   span4.style.width = "0%"
   cross.style.visibility = "hidden"
-  cross.style.transitionDelay = "1.2s"
+  cross.style.transitionDelay = "0s"
   links.style.visibility = "hidden"
   links.style.transitionDelay = "0s"
 })
