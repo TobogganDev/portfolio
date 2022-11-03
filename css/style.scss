@@ -236,15 +236,16 @@ header{
   align-items: center;
   justify-content: space-between;
   padding: 20px 40px;
-  
 
   a{
     text-decoration: none;
     color: white;
   }
-
-  .header-title a{
+  .header-title{
     z-index: 500;
+
+  }
+  .header-title a{
     display: flex;
     align-items: center;
     text-transform: uppercase;
