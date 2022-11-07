@@ -6,10 +6,8 @@ var cross1 = document.getElementById("cross1")
 var links1 = document.getElementById("links-contain")
 var burger = document.getElementById('burger')
 var body = document.querySelector('body')
-var card = document.querySelector('project-card')
 
 burger.addEventListener('click', function(){
-  card.style.zIndex = -1;
   burger.style.visibility = 'hidden';
   div1.style.width = "100%"
   div2.style.width = "100%"
@@ -22,7 +20,6 @@ burger.addEventListener('click', function(){
 })
 
 cross1.addEventListener('click', function(){
-  card.style.zIndex = 10
   burger.style.visibility = 'visible'
   div1.style.width = "0%"
   div2.style.width = "0%"

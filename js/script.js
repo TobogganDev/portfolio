@@ -5,10 +5,8 @@ let span3 = document.getElementById("span3")
 let span4 = document.getElementById("span4")
 let cross = document.getElementById("cross")
 let links = document.getElementById("links-contain")
-var card1 = document.querySelector('projetc-card')
 
 click.addEventListener('click', function(){
-  card1.style.zIndex = -1
   span1.style.width = "100%"
   span2.style.width = "100%"
   span3.style.width = "100%"
@@ -20,7 +18,6 @@ click.addEventListener('click', function(){
 })
 
 cross.addEventListener('click', function(){
-  card1.style.zIndex = 10
   span1.style.width = "0%"
   span2.style.width = "0%"
   span3.style.width = "0%"
