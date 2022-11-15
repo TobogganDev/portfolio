@@ -768,7 +768,6 @@ header{
     .republique{
       width: 38%;
       height: 50vh;
-      // height: auto;
       border-radius: 50px;
       overflow: hidden;
       position: relative;
@@ -788,7 +787,7 @@ header{
         position: relative;
         padding: 0 0 20px 20px;
         color: #202020;
-        p{
+        >p{
           background-color: white;
           border-radius: 40px;
           font-size: 0.7rem;
@@ -796,6 +795,19 @@ header{
           width: fit-content;
           margin-bottom: 7px;
           font-weight: 600;
+          transform: translate(0,-50%);
+          transition: .4s;
+          opacity: 0;
+          display: block;
+          &:first-child{
+            transition-delay: .1s;
+          }
+          &:nth-child(2){
+            transition-delay: .2s;
+          }
+          @keyframes show {
+            from{}
+          }
         }
         .cta-info{
           display: flex;
@@ -824,7 +836,17 @@ header{
         }
       }
     }
+    .container-card:hover .card-info{
+      & > p{
+        opacity: 1;
+        transform: translate(0,0);
+      }
+      & > p:nth-child(2){
+        transition-delay: .3s !important;
+      }
+    }
   }
+
   
 
   // .container-projects-cards{
