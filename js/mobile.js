@@ -5,7 +5,6 @@ var div4 = document.getElementById("span4")
 var cross1 = document.getElementById("cross1")
 var links1 = document.getElementById("links-contain")
 var burger = document.getElementById('burger')
-var body = document.querySelector('body')
 
 burger.addEventListener('click', function(){
   burger.style.visibility = 'hidden';
@@ -29,4 +28,18 @@ cross1.addEventListener('click', function(){
   cross1.style.transitionDelay = "0s"
   links1.style.visibility = "hidden"
   links1.style.transitionDelay = "0s"
+})
+
+// PROJECTS CARDS EVENTS
+var body = document.querySelector('body')
+let repu = document.querySelector('.republique')
+let cardImg = document.querySelector('.card-img')
+
+repu.addEventListener('mouseenter', function (){
+  body.style.background = '#6D9886';
+  cardImg.style.filter = 'saturate(0)'
+})
+repu.addEventListener('mouseleave', function (){
+  body.style.background = '#202020'
+  cardImg.style.filter = 'saturate(1)'
 })

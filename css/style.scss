@@ -22,15 +22,17 @@ html{
 }
 
 body{
-  background-color: #181818;
+  background-color: #202020;
   color: white;
   font-family: 'Red Hat Display', sans-serif;
   font-size: 20px;
+  transition: .6s cubic-bezier(0,.89,.41,1);
+
 }
 
 
 ::-webkit-scrollbar {
-  width: 12px !important;
+  width: 10px !important;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -39,7 +41,7 @@ body{
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #570A57 !important;
+  background-color: transparent !important;
   border-radius: 10px !important;
 }
 
@@ -515,36 +517,6 @@ header{
   }
 }
 
-/* ************************************************ */
-
-.projects{
-  width: 80%;
-  margin: 100px auto;
-  
-  .contain-title{
-    display: inline-block;
-    width: fit-content;
-    grid-row: 1;
-    
-    h2{
-      text-transform: uppercase;
-      position: relative;
-      z-index: 1;
-      font-size: 70px;
-    }
-    h2::after{
-      content: "";
-      position: absolute;
-      background-color: #7b2cbf;
-      z-index: -1;
-      top: 60%;
-      left: -0.1em;
-      right: -0.1em;
-      bottom: 0;
-    }
-    
-  }
-} 
 
 // *******************************************************
 
@@ -670,7 +642,7 @@ header{
       align-items: center;
       p{
         font-weight: 200;
-        font-size: 35px;
+        font-size: 1.5rem;
         @media screen and (max-width : 900px) {
           font-size: 25px;
         }
@@ -683,13 +655,13 @@ header{
       }
 
       .h3{
-        font-size: 150px;
+        font-size: 7rem;
         text-transform: uppercase;
         font-weight: 700;
         text-decoration:underline;
         text-decoration-color: #7b2cbf;
         @media screen and (max-width : 900px) {
-          font-size: 80px;
+          font-size: 5rem;
         }
         @media screen and (max-width : 600px) {
           display: none;
@@ -707,9 +679,9 @@ header{
 
   .container-skills-text{
     p{
-      font-size: 35px;
+      font-size: 1.5rem;
       @media screen and (max-width : 900px) {
-        font-size: 25px;
+        // font-size: 1.5rem;
       }
       span{
         text-decoration: underline;
@@ -778,69 +750,96 @@ header{
     }
   }
 
-  .container-projects-cards{
-    @media screen and (max-width : 900px) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .project-card{
-      width: 33%;
-      border-radius: 10px;
+  .container-projects-card{
+    margin: 100px 0;
+    .republique{
+      width: 40%;
+      height: 40vh;
+      // height: auto;
+      border-radius: 50px;
       overflow: hidden;
-      margin: 50px 0 100px 0;
-      background-color: #1d1d1d;
-      transition: .4s ease;
-      @media screen and (max-width : 900px) {
-        width: 80%;
-      }
-      &:hover{
-        box-shadow: 0px 2px 15px 5px #000000;
-      }
-      
+      position: relative;
+      display: flex;
+      align-items: flex-end;
       img{
+        transition: .6s cubic-bezier(0,.89,.41,1);
         width: 100%;
+        position: absolute;
+        &:hover{
+          transform: scale(1.1);
+        }
       }
-
       .card-info{
-        padding: 20px;
-
-        h2{
-          font-size: 2.5rem;
-          font-weight: normal;
-        }
-        p{
-          font-size: 1.3rem;
-          font-weight: 200;
-        }
-
-        .link-card{
-          margin-top: 40px;
-          display: flex;
-          justify-content: space-between;
-
-          a{
-            text-decoration: none;
-            color: white;
-            font-size: 20px;
-            padding: 10px;
-            @media screen and (max-width : 600px) {
-              font-size: 15px;
-            }
-          }
-  
-          .link-project{
-            background-color: #7b2cbf;
-          }
-
-          .link-github{
-            background-color: #000;
-          }
-        }
-        
+        position: relative;
+        padding: 0 0 20px 20px;
       }
     }
   }
+  
+
+  // .container-projects-cards{
+  //   @media screen and (max-width : 900px) {
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //   }
+  //   .project-card{
+  //     width: 33%;
+  //     border-radius: 10px;
+  //     overflow: hidden;
+  //     margin: 50px 0 100px 0;
+  //     background-color: #1d1d1d;
+  //     transition: .4s ease;
+  //     @media screen and (max-width : 900px) {
+  //       width: 80%;
+  //     }
+  //     &:hover{
+  //       box-shadow: 0px 2px 15px 5px #000000;
+  //     }
+      
+  //     img{
+  //       width: 100%;
+  //     }
+
+  //     .card-info{
+  //       padding: 20px;
+
+  //       h2{
+  //         font-size: 2.5rem;
+  //         font-weight: normal;
+  //       }
+  //       p{
+  //         font-size: 1.3rem;
+  //         font-weight: 200;
+  //       }
+
+  //       .link-card{
+  //         margin-top: 40px;
+  //         display: flex;
+  //         justify-content: space-between;
+
+  //         a{
+  //           text-decoration: none;
+  //           color: white;
+  //           font-size: 20px;
+  //           padding: 10px;
+  //           @media screen and (max-width : 600px) {
+  //             font-size: 15px;
+  //           }
+  //         }
+  
+  //         .link-project{
+  //           background-color: #7b2cbf;
+  //         }
+
+  //         .link-github{
+  //           background-color: #000;
+  //         }
+  //       }
+        
+  //     }
+  //   }
+  // }
   
 }
 
