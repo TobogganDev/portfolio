@@ -5,6 +5,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@font-face {
+  font-family: 'Mazius';
+  src: url('../font/MaziusDisplay/Mazius\ Display\ Regular.otf');
+}
+
+@font-face {
+  font-family: 'Mazius';
+  font-style: italic;
+  src: url('../font/MaziusDisplay/Mazius\ Display\ Extraitalic.otf');
+}
+
 
 :root{
   --background: #181818;
@@ -753,25 +764,61 @@ header{
   .container-projects-card{
     margin: 100px 0;
     .republique{
-      width: 40%;
-      height: 40vh;
+      width: 38%;
+      height: 50vh;
       // height: auto;
       border-radius: 50px;
       overflow: hidden;
       position: relative;
       display: flex;
       align-items: flex-end;
-      img{
+      .card-img{
         transition: .6s cubic-bezier(0,.89,.41,1);
         width: 100%;
+        height: 100%;
         position: absolute;
-        &:hover{
-          transform: scale(1.1);
+        img{
+          width: 120%;
         }
       }
+      
       .card-info{
         position: relative;
         padding: 0 0 20px 20px;
+        color: #202020;
+        p{
+          background-color: white;
+          border-radius: 40px;
+          font-size: 1rem;
+          padding: 5px;
+          width: fit-content;
+          margin-bottom: 7px;
+          font-weight: 600;
+        }
+        .cta-info{
+          display: flex;
+          gap: 15px;
+          align-items: center;
+          p{
+            font-size: 2rem;
+            padding: 7px 10px;
+            border-radius: 40px;
+            background-color: white;
+            color: #202020;
+            span{
+              font-family: Mazius;
+              font-style: italic;
+            }
+          }
+          a{
+            i{
+              color: #000;
+              background-color: #fff;
+              border-radius: 50%;
+              font-size: 3rem;
+            }
+          }
+        }
       }
     }
   }
