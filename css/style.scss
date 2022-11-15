@@ -763,6 +763,8 @@ header{
 
   .container-projects-card{
     margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
     .republique{
       width: 38%;
       height: 50vh;
@@ -789,8 +791,8 @@ header{
         p{
           background-color: white;
           border-radius: 40px;
-          font-size: 1rem;
-          padding: 5px;
+          font-size: 0.7rem;
+          padding: 8px;
           width: fit-content;
           margin-bottom: 7px;
           font-weight: 600;
@@ -801,6 +803,7 @@ header{
           align-items: center;
           p{
             font-size: 2rem;
+            font-weight: 400;
             padding: 7px 10px;
             border-radius: 40px;
             background-color: white;
