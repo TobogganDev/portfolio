@@ -5,7 +5,6 @@ let repu = document.querySelector('.republique')
 let cardImg = document.querySelectorAll('.card-img')
 let color =  ['#6D9886', '#4C6793']
 let project = document.querySelectorAll('.container-card')
-console.log(cardImg)
 project.forEach((x,i) => {
   x.addEventListener('mouseenter', (e)=>{
     body.style.background = color[i]
