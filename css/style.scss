@@ -841,10 +841,6 @@ header{
       grid-column: 1/4;
       grid-row: 1/4;
     }
-    .class{
-      grid-column: 4/6;
-      grid-row: 2/4;
-    }
     .container-card:hover .card-info{
       & > p{
         opacity: 1;
