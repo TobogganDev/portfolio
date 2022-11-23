@@ -721,7 +721,7 @@ header{
     margin: 70px auto;
     gap: 50px;
     @media screen and (max-width : 1000px) {
-      grid-template-rows: repeat(4,10vh);
+      grid-template-rows: repeat(10,10vh);
     }
     .container-card{
       border-radius: 50px;
@@ -813,6 +813,10 @@ header{
     .protection_civile{
       grid-column: 4/6;
       grid-row: 2/4;
+      @media screen and (max-width : 1000px) {
+        grid-row: 4/7;
+        grid-column: 1/6;
+      }
     }
     .container-card:hover .card-info{
       & > p{
